@@ -1,4 +1,4 @@
-# amount-formatter
+# amount-formatter [![](https://jitpack.io/v/Byte-Code/amount-formatter.svg)](https://jitpack.io/#Byte-Code/amount-formatter)
 
 The goal of this little library is to format in the simplest way amounts inside a jasper report template.
 

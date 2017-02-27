@@ -34,7 +34,7 @@ public class AmountFormatter {
         return label;
     }
 
-    public String format(String currency, String amount) {
+    public String format(String currency, String amount, Boolean vat) {
         Double convertedAmount = Double.valueOf(amount) / 100;
         Locale locale;
 
@@ -51,7 +51,11 @@ public class AmountFormatter {
         }
 
         NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
-        return fmt.format(convertedAmount);
+        String stringAmount = fmt.format(convertedAmount);
+
+        if(Boolean.TRUE.equals(vat)) stringAmount += " + VAT";
+
+        return stringAmount;
     }
 
 }

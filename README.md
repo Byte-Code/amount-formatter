@@ -9,5 +9,5 @@ It returns a formatted String representing the price (label included)
 
 
 * To build .jar: `mvn package`  
-* To local install the dependency: `mvn install:install-file -Dfile=../amount-formatter/target/amount-formatter-1.0-SNAPSHOT.jar -DgroupId=com.byte-code.amount-formatter -DartifactId=amount-formatter -Dversion=1.0-SNAPSHOT -Dpackaging=jar`  
+* To install the dependency locally: `mvn install:install-file -Dfile=../amount-formatter/target/amount-formatter-1.0-SNAPSHOT.jar -DgroupId=com.byte-code.amount-formatter -DartifactId=amount-formatter -Dversion=1.0-SNAPSHOT -Dpackaging=jar`  
 * To include from JitPack: https://jitpack.io/#Byte-Code/amount-formatter/1.0.0
